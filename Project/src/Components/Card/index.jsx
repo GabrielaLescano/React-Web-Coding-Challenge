@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import PropType from 'prop-types';
 
 const Card = ({ bike }) => {
     return (
@@ -13,6 +14,16 @@ const Card = ({ bike }) => {
             <span> Description: {bike.description ? bike.description : '-'} </span>
         </div>
     )
+}
+
+Card.propTypes = {
+    bike: PropType.shape({
+        title: PropType.string,
+        thumb: PropType.string,
+        date_stolen: PropType.number,
+        stolen_location: PropType.string,
+        description: PropType.string
+    })
 }
 
 export default Card;
