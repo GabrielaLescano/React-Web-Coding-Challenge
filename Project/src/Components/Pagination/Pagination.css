@@ -1,0 +1,38 @@
+.pagination-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.total-pages{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    column-gap: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.pagination-container ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 400px;
+    align-self: center;
+}
+
+.pagination-container li{
+    background-color:  rgb(54, 54, 54);
+    cursor: pointer;
+    padding: 0px 4px 0px 4px;
+    border-radius: 2px;
+}
+
+.pagination-container li:hover{
+    background-color: rgb(221, 217, 217);
+    color: black;
+}
+
+.pagination-container li.selected{
+    background-color: rgb(221, 217, 217);
+    color: black;
+}

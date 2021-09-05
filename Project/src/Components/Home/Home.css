@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+.home-container{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: rgb(228, 226, 225);
+}
+
+.home-title{
+    padding-left: 50px;
+}
+
+.title-home-container{
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    align-content: center;
+    column-gap: 10px;
+}
+
+.img-bike-home{
+    filter: invert(0.8);
+    width: 45px;
+}

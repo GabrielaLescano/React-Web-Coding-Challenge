@@ -1,0 +1,30 @@
+.card-container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(240, 248, 255, 0.349);
+    padding: 20px 20px 20px 20px;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.img-card-container{
+    padding-top: 6px;
+    padding-left: 8px;
+}
+
+.description-container{
+   padding-left: 20px;
+}
+
+.title-case, .description-case{
+    color:black;
+    width: 450px;
+}
+
+.title-case:hover, .description-case:hover{
+    background-color: whitesmoke;
+    border-radius: 2px;
+    padding: 0 4px 0 4px;
+    width: max-content;
+}

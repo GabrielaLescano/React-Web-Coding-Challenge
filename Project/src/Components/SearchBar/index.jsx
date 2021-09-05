@@ -4,6 +4,7 @@ import { fetchData, filterBikes } from '../../actions';
 import PropTypes from 'prop-types'
 import Pagination from '../Pagination';
 import moment from 'moment';
+import './SearchBar.css'
 
 function SearchBar({ results, bikes }) {
     const dispatch = useDispatch();
@@ -33,15 +34,14 @@ function SearchBar({ results, bikes }) {
     }
     
     return (
-        <div>
-           <h1>Search</h1>
-           <input type='text' placeholder='Search case or location' ref={input}/>
-           <div>
-               <input type="date" onBlur={handleSelectDate} ref={fromInput}/>
-               <input type="date" onBlur={handleSelectDate} ref={toInput}/>
-           </div>
-           <button onClick={() => handleSearch()}>Find</button>
-           <h3> Se han encontrado: {results} resultados.</h3>
+        <div className='searchbar-container'>
+            <div className='inputs-container'>
+                <input className='input-search' type='text' placeholder='Search case or location' ref={input}/>
+               <input className='input-date' type="date" onBlur={handleSelectDate} ref={fromInput}/>
+               <input className='input-date' type="date" onBlur={handleSelectDate} ref={toInput}/>
+                <button className='btn-search' onClick={() => handleSearch()}>Find</button>
+            </div>
+           <h5 className='text-results'> Total cases found: {results}.</h5>
            <Pagination results={results} counter={counter} handleChange={(page) => handleSearch(page)} />
         </div>
     )
@@ -49,7 +49,7 @@ function SearchBar({ results, bikes }) {
 
 SearchBar.propTypes = {
     results: PropTypes.number,
-    bikes: PropTypes.object
+    bikes: PropTypes.array
 }
 
 function mapStateToProps(state) {

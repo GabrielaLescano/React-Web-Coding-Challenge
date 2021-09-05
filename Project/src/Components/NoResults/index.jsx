@@ -2,7 +2,11 @@ import React from 'react';
 
 function NoResults() {
     return (
-        <div>There is nothing, srry :(</div>
+        <div style={{display:'flex', padding:'20px', justifyContent:'center', flexDirection:'column'}} >
+            <span style={{alignSelf:'center'}} >No results :( </span>
+            <br />
+            <span>Try another Search.</span>
+        </div>
     )
 }
 

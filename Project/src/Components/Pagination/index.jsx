@@ -1,14 +1,15 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import ReactPaginate from 'react-paginate';
+import './Pagination.css';
 
 function Pagination({ handleChange, counter, results }) {
     const totalPages = Math.round(results / 10);
 
     return (
-        <div>
-            <div>Page <b>{counter + 1}</b> / {totalPages}</div>
-            <ReactPaginate 
+        <div className='pagination-container'>
+            <div className='total-pages'> Page <b>{counter + 1}</b> / {totalPages}</div>
+            <ReactPaginate
                 key={results}
                 pageCount={totalPages} 
                 pageRangeDisplayed={5} 

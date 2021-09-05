@@ -1,0 +1,44 @@
+.searchbar-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.input-search{
+    width: 300px;
+}
+
+.input-search, .input-date{
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(250, 246, 246);
+}
+
+.btn-search{
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.btn-search:hover{
+    background-color: rgb(250, 246, 246);
+    color: black;
+}
+
+.text-results{
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
