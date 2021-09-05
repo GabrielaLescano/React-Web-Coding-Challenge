@@ -18,7 +18,7 @@ As a police officer:
   - [x] Case title
   - [x] Case description
   - [x] Date of the theft
-  - [ ] Date of when the case was reported
+  - [x] Date of when the case was reported
   - [x] Location of the theft
   - [x] Picture of the bike, if available
 - [x] I want to filter reported bike thefts by partial case title.
