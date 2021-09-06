@@ -41,10 +41,10 @@ The API is known to have some limitations. If you are not able to implement a pa
 
 For the layout of each page, please refer to the provided wireframes:
 
-- [Index page](./screens/index.png)
-- [Error state](./screens/index_error.png)
-- [Empty state](./screens/index_empty.png)
-- [Loading state](./screens/index_loading.png)
+- [x] [Index page](./screens/index.png)
+- [x] [Error state](./screens/index_error.png)
+- [x] [Empty state](./screens/index_empty.png)
+- [x] [Loading state](./screens/index_loading.png)
 
 Also, you can take inspiration from these resources:
 
