@@ -7,6 +7,10 @@ Stolen bikes are a typical problem in Berlin. The Police want to be more efficie
 
 This app needs to display the list of reported bike thefts based on the Bikewise [API](https://www.bikewise.org/documentation/api_v2).
 
+## View the project here
+
+https://police-department-of-berlin-challenge.vercel.app/
+
 ## Product Requirements
 
 As a police officer:
