@@ -55,9 +55,9 @@ Host the website on the service of your choice (zeit, Heroku, AWS, GCloud, ...)
 
 ## Tech Requirements
 
-- React
+- [x] React 
 - Tests: Jest + react-testing-library / enzyme
-- Code Linter
+- [x] Code Linter
 - Typescript is a plus
 - CSSinJS is a plus: styled-components, styled-system, ...
 
