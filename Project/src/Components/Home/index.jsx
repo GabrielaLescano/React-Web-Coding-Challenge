@@ -11,7 +11,14 @@ function Home({ bikes, fetching_error }) {
     return (
         <div className='home-container'>
             <div className='title-home-container'>
-                <h1 className='home-title'>Search for Stolen Bikes </h1>
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Berliner_Polizei.svg/620px-Berliner_Polizei.svg.png' 
+                        alt='img not found' 
+                        className='' 
+                        width='30px' height='30px'/>
+                <h1> Police Department of Berlin </h1>
+                </div>
+            <div className='title-search-container'>
+                <h2 className='home-title'>Search for Stolen Bikes </h2>
                 <img src='https://www.svgrepo.com/show/123686/bike.svg' alt='img not found' className='img-bike-home' />
             </div>
             <SearchBar/>

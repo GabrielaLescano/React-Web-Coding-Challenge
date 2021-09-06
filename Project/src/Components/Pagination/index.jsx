@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactPaginate from 'react-paginate';
 import './Pagination.css';
 
-function Pagination({ handleChange, counter, results }) {
+function Pagination({ handleChange, counter, results, }) {
     const totalPages = Math.round(results / 10);
 
     return (

@@ -36,7 +36,7 @@ function SearchBar({ results, bikes }) {
     return (
         <div className='searchbar-container'>
             <div className='inputs-container'>
-                <input className='input-search' type='text' placeholder='Search case or location' ref={input}/>
+                <input className='input-search' type='text' placeholder='Search case' ref={input} />
                <input className='input-date' type="date" onBlur={handleSelectDate} ref={fromInput}/>
                <input className='input-date' type="date" onBlur={handleSelectDate} ref={toInput}/>
                 <button className='btn-search' onClick={() => handleSearch()}>Find</button>

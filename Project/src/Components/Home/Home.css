@@ -7,18 +7,30 @@
     color: rgb(228, 226, 225);
 }
 
-.home-title{
+.title-home-container, .title-search-container{
+    background-color: rgba(0, 0, 0, 0.699);
+    column-gap: 10px;
+    display: flex;
+    align-items: center;
     padding-left: 50px;
 }
 
 .title-home-container{
-    background-color: rgb(54, 54, 54);
-    display: flex;
-    align-content: center;
-    column-gap: 10px;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+.title-search-container{
+    margin-top: 0.5px;
+}
+
+.home-title{
+    padding-left: 40px;
+    padding-top: 12px;
+    margin-top: 2px;
 }
 
 .img-bike-home{
     filter: invert(0.8);
     width: 45px;
+    margin-top: -15px;
 }

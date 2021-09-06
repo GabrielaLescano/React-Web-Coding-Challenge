@@ -9,16 +9,16 @@ export function fetchData(query, page) {
             type: fetchingData
         });
         
-        fetch(`https://bikeindex.org:443/api/v3/search?page=${page}&per_page=10&query=${encodeURIComponent(query)}&distance=10&stolenness=stolen`)
+        fetch(`https://bikeindex.org:443/api/v3/search?page=${page}&per_page=10&location=Berlin&query=${encodeURIComponent(query)}&distance=10&stolenness=proximity`)
             .then(response => response.json())
             .then(bikes => {
-                fetch(`https://bikeindex.org:443/api/v3/search/count?query=${encodeURIComponent(query)}&distance=10&stolenness=stolen`)
+                fetch(`https://bikeindex.org:443/api/v3/search/count?query=${encodeURIComponent(query)}&location=Berlin&distance=10&stolenness=proximity`)
                     .then(response => response.json())
                     .then(bikes_count => {
                         dispatch({
                             type: dataFetched,
                             payload: {
-                                bikes_counter: bikes_count.stolen,
+                                bikes_counter: bikes_count.proximity,
                                 ...bikes
                             }
                         })
