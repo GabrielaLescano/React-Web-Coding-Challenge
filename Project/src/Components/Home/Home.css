@@ -34,3 +34,13 @@
     width: 45px;
     margin-top: -15px;
 }
+
+@media screen and (max-width: 480px){
+    .title-home-container, .title-search-container{
+        padding-left: 20px;
+    }
+
+    .home-title{
+        padding-left: 0;
+    }
+}

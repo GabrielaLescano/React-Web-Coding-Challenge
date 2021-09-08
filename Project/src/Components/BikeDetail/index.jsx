@@ -40,8 +40,8 @@ function BikeDetail({ match }) {
                         <p> {bike.stolen_location ? bike.stolen_location : ' Not available '}. </p>
                         <h3> Bike Description: </h3>
                          <p> {bike.description ? bike.description : ' Not available'} </p>
-                        {bike.thumb ? <img src={bike.thumb} alt='img not found' width='350px' height='350px'/> : 
-                        <img src='https://www.svgrepo.com/show/123686/bike.svg' alt='img not found' width='250px' height='250px'/>}
+                        {bike.thumb ? <img src={bike.thumb} alt='img not found' width='350px' height='350px' className='img-bike-detail'/> : 
+                        <img src='https://www.svgrepo.com/show/123686/bike.svg' alt='img not found'  width='350px' height='350px' className='img-bike-detail'/>}
                         {
                             bike.stolen_record &&
                             <div>

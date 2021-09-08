@@ -36,10 +36,14 @@ function SearchBar({ results, bikes }) {
     return (
         <div className='searchbar-container'>
             <div className='inputs-container'>
+                <div className='search-container'>
                 <input className='input-search' type='text' placeholder='Search case' ref={input} />
+                <button className='btn-search' onClick={() => handleSearch()}>Find</button>
+            </div>
+            <div className='filter-container'>
                <input className='input-date' type="date" onBlur={handleSelectDate} ref={fromInput}/>
                <input className='input-date' type="date" onBlur={handleSelectDate} ref={toInput}/>
-                <button className='btn-search' onClick={() => handleSearch()}>Find</button>
+            </div>
             </div>
            <h5 className='text-results'> Total cases found: {results}.</h5>
            <Pagination results={results} counter={counter} handleChange={(page) => handleSearch(page)} />

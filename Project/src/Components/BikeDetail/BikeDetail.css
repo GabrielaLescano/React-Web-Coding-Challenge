@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
 
 .detail-container{
-    padding: 50px 0px 50px 30px;
+    padding: 50px 30px 50px 30px;
     font-family: 'IBM Plex Sans KR', sans-serif;
     color: rgb(228, 226, 225);
 }
@@ -24,4 +24,18 @@
     width: 25px;
     height: 25px;
     padding-right: 15px;
+}
+
+
+@media screen and (max-width: 480px){
+    .backtohome-container h1{
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .img-bike-detail{
+        width: 300px;
+        height: 300px;
+    }    
 }

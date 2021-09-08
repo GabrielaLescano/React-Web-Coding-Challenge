@@ -3,6 +3,11 @@
     flex-direction: column;
 }
 
+.search-container, .filter-container{
+    display: flex;
+    column-gap: 20px;
+}
+
 .inputs-container{
     display: flex;
     justify-content: space-around;
@@ -41,4 +46,40 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .inputs-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-date{
+        width: 150px;
+    }   
+
+    .search-container, .filter-container{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .filter-container{
+        column-gap: 62px;
+    }
+
+    .text-results{
+        padding-right: 50px;
+    }
+
+    @media screen and (max-width: 480px){
+        .search-container, .filter-container{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .text-results{
+            padding-right: 20px;
+        }
+    }
 }
